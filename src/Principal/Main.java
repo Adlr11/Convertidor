@@ -27,6 +27,7 @@ public class Main {
                     if (ValidarNumero(input)) {
                         double Minput = Double.parseDouble(input);
                         moneda.ConvertirMoneda(Minput);
+
                     }
                 break;
 

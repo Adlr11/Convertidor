@@ -12,12 +12,29 @@ public class Conversor {
     public void ConvertirMoneda(double Minput) {
         String opcion = JOptionPane.showInputDialog(null, "Elige el tipo de cambio", "Tipos de cambio",
                 JOptionPane.PLAIN_MESSAGE, null, opciones,
-                opciones[5]).toString();
+                opciones[1]).toString();
 
         switch (opcion) {
             case "De Peso a Dólar": moneda.PesoToDollar(Minput);
             break;
+            case "De Peso a Euro": moneda.PesoToEuro(Minput);
+            break;
+            case "De Peso a Yen": moneda.PesoToYen(Minput);
+            break;
+            case "De Peso a Libra": moneda.PesoToLibra(Minput);
+            break;
+            case "De Peso a Won Coreano": moneda.PesoToWon(Minput);
+            break;
+
             case "De Dólar a peso": peso.DollarToPeso(Minput);
+            break;
+            case "De Euro a Peso": peso.EuroToPeso(Minput);
+            break;
+            case "De Yen a peso": peso.YenToPeso(Minput);
+            break;
+            case "De Libra a Peso": peso.LibraToPeso(Minput);
+            break;
+            case "De Won Coreano a Peso": peso.WonToPeso(Minput);
             break;
         }
 
